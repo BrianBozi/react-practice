@@ -28,13 +28,11 @@ function App() {
 
 function Folder(props){
   const [isOpen, setIsOpen ] = useState(false)
-
   const {name, children} = props
 
   function handleClick(){
     setIsOpen(!isOpen)
   }
-
   return(
     <>
   <div>
@@ -46,7 +44,6 @@ function Folder(props){
   </>
   )
 }
-
 // These are the files
 // they recive there name from the props so thats why we have props
 // as the parameter on line 49
